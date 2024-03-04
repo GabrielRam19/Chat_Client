@@ -1,0 +1,167 @@
+body{
+    background-color: #13505B;
+}
+
+.chat{
+    background-color: #119DA4;
+    padding: 10vw 5vw 0 5vw;
+    border-radius: 2em;
+
+}
+
+.div-chat {
+    width: 40rem;
+    height: 15rem;  
+    overflow-y: scroll;
+    background: linear-gradient(90deg, #003b76, #567180);
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    margin-top: 2vw;
+    position: relative;
+    bottom: 10vw;
+  }
+  
+  .div-chat > p {
+    color: black;
+    background-color: white;  
+    width: fit-content;
+    padding: 0.5em;
+    border-radius: 10px;
+    position:relative;
+    left: 10%;
+  }
+
+.input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+    position: relative;
+    bottom: 10vw;
+  }
+  
+  .input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+  }
+
+.form{
+  position:relative;
+  bottom:9vw;
+}
+
+#boton{
+  position: relative;
+  margin-left: 1vw;
+}
+
+.input-text {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  font-size: .8vw;
+  color: #fff;
+  background-color: rgb(28,28,30);
+  box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+  border-radius: 0.4vw;
+  border: none;
+  outline: none;
+  padding: 0.4vw;
+  width: 190px;
+  height: 20px;
+  transition: .4s;
+  margin-left: 1vw;
+}
+
+.input-text:hover {
+  box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186);
+}
+
+.input-text:focus {
+  box-shadow: 0 0 0 .15vw skyblue;
+}
+
+#titulo{
+  font-family: "Kdam Thmor Pro", sans-serif;
+  position: relative;
+  bottom: 10vw;
+}
+
+#titulo:hover{
+  animation-name: cambio;
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cambio{
+  0%{
+    color: black;
+  }
+  50%{
+    color:rgb(53, 53, 53);
+  }
+  75%{
+    color: gray;}
+  100%{
+    color: white;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .chat{
+    width: fit-content;
+  }
+  #titulo{
+    font-size: 3vw;
+  }
+  .div-chat{
+    width: 25rem;
+    height: 10rem;
+  }
+  .div-chat > p{
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 430px) {
+  .chat{
+    width: fit-content;
+    position: relative;
+    right: 10%;
+  }
+  #titulo{
+    font-size: 5vw;
+  }
+  .div-chat{
+    width: 15rem;
+    height:15rem;
+  }
+  .div-chat > p{
+    font-size: 3vw;
+  }
+  .input{
+    height: 1vw;
+  }
+  .div-type-chat{
+    display: grid;
+    grid-template-columns: 5vw 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .prueba{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .input-text{
+    grid-column: 2;
+    grid-row: 1;
+  }
+  #boton{
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
