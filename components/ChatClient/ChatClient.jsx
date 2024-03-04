@@ -4,7 +4,7 @@ import io from "socket.io-client"
 import Picker from "emoji-picker-react"
 import './ChatClient.css';
 
-const socket = io('http://localhost:4000');
+const socket = io('https://chat-server-j37h.onrender.com');
 
 export const ChatClient=()=>{
     let [message,setMessage]=useState('');
