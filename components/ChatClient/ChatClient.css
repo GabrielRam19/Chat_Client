@@ -9,6 +9,12 @@ body{
 
 }
 
+.name{
+    font-size: 4vw;
+    color: white;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
 .div-chat {
     width: 40rem;
     height: 15rem;  
@@ -112,7 +118,7 @@ body{
   
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .chat{
     width: fit-content;
   }
@@ -126,13 +132,15 @@ body{
   .div-chat > p{
     font-size: 1.5vw;
   }
+  .input-text{
+    font-size: 2vw;
+  }
 }
 
 @media (max-width: 430px) {
   .chat{
     width: fit-content;
     position: relative;
-    right: 10%;
   }
   #titulo{
     font-size: 5vw;
@@ -142,7 +150,7 @@ body{
     height:15rem;
   }
   .div-chat > p{
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .input{
     height: 1vw;
@@ -159,6 +167,7 @@ body{
   .input-text{
     grid-column: 2;
     grid-row: 1;
+    font-size: 4vw;
   }
   #boton{
     grid-column: 2;
